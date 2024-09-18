@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="icon" type="image/x-icon" href="images.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="cover">
+        <img src="pokemonTitle.png" alt="Pokemon Title" />
+      </div>
+      <input type="text" id="searchInput" placeholder="Search Pokémon" />
+    </header>
+    <main>
+      <div id="pokedex"></div>
+      <div id="overlay">
+        <div class="popup">
+          <img src="" alt="Pokemon Image" />
+          <h2 id="popup-name"></h2>
+          <div class="cardcolor">
+            <canvas id="popup-stats-chart"></canvas>
+          </div>
+          <div class="nav-btn">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <button onclick="getMorePokemon()">Load More...</button>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+body {
+  background-image: url("background-1130116_1280.webp");
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: backgroundGlow 40s infinite;
+}
+
+.cover img {
+  height: 150px;
+  width: 300px;
+}
+
+header {
+  width: 100%;
+  height: 380px;
+  background-image: url('1s-eno4yd9kfag2k8vytumg.webp');
+  background-size: cover; 
+  background-position: center; 
+  color: rgb(8, 8, 8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 6em;
+}
+
+header h1 img {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+header #searchInput {
+  margin-top: 10px;
+  padding: 10px;
+  border-color: rgb(0, 0, 0);
+  border-radius: 25px;
+  width: 250px;
+  font-size: 16px;
+}
+
+main {
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.pokemon {
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: rgb(193, 181, 181);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 160px;
+  box-sizing: border-box;
+}
+
+.pokemon img {
+  max-width: 100px;
+  height: 100px;
+  transition: transform 0.2s;
+}
+
+.pokemon:hover img {
+  animation: shake 0.5s;
+}
+
+.pokemon h2 {
+  margin: 10px 0 5px;
+}
+
+.pokemon p {
+  margin: 5px 0;
+  color: #555;
+}
+
+#pokedex {
+  display: contents;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  font-family: cursive;
+}
+
+.type {
+  color: #c7c7ff;
+  background-color: rgb(0, 0, 0);
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.pokemon:hover h2, .pokemon:hover p {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-2px, 0px) rotate(1deg); }
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon:focus {
+  outline: none;
+}
+
+.popup {
+  background-image: url("background-abstract-comic-premium_462539-68.jpg");
+  background-size: contain;
+  height: 407px;
+  width: 200px;
+  background-color: #ccc2c2;
+  box-shadow: 0 0 90px 5px rgb(255, 254, 254);
+  transition: box-shadow 0.3s;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.popup img {
+  background-image: url("background-1207105_1920.jpg");
+  border-radius: 5px;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+}
+
+.popup h2 {
+  border-radius: 20px;
+  background-color: #87fcd7;
+  color: rgb(0, 0, 0);
+}
+
+.cardcolor {
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center; /* Center-aligns the buttons horizontally */
+  gap: 10px; /* Adds space between buttons */
+}
